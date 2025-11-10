@@ -262,6 +262,7 @@ namespace MathHighLow.Controllers
             {
                 Card drawnCard = deckService.DrawSlotCard();
 
+                // TODO: switch 구문으로 만들면 좋겠다.
                 if (drawnCard.GetCardType() == "Number")
                 {
                     numberCardsDrawn++;
